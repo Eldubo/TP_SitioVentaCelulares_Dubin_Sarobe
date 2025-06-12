@@ -33,6 +33,3 @@ Está desarrollado con React y utiliza React Router DOM para manejar rutas con p
 - JavaScript ES6+
   
 ---
-
-## Estructura del proyecto
-
