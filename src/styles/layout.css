@@ -1,0 +1,30 @@
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+    padding: 20px;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  footer {
+    background-color: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  
