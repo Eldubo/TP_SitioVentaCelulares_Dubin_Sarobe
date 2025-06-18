@@ -15,15 +15,15 @@ const Navbar = () => {
   };
 
   return (
-    <header className="navbar">
+    <header className={`navbar ${menuAbierto ? 'active' : ''}`}>
       <div className="navbar__logo">
         <Link to="/" onClick={cerrarMenu}>📱 CellStore</Link>
       </div>
 
-      <nav className={`navbar__links ${menuAbierto ? 'active' : ''}`}>
+      <nav className="navbar__links">
         <NavLink to="/" onClick={cerrarMenu}>Home</NavLink>
         <NavLink to="/quienes-somos" onClick={cerrarMenu}>Quiénes Somos</NavLink>
-        <div className="navbar__dropdown">
+        <div className="dropdown">
           <NavLink to="/productos" onClick={cerrarMenu}>Productos ▾</NavLink>
           <div className="dropdown-content">
             <NavLink to="/productos" onClick={cerrarMenu}>Ver Todos</NavLink>
