@@ -6,11 +6,11 @@ export default function QuienesSomos() {
       <div className="quienes-somos-content">
         <h1>Quiénes Somos</h1>
         <p>Somos una tienda especializada en tecnología móvil, ofreciendo los mejores dispositivos de las marcas más reconocidas del mercado.</p>
-        <p>En CellStore nos apasiona brindarte lo último en tecnología, garantizando productos de calidad y un servicio al cliente excepcional.</p>
+        <p>En Tecnomorphosis nos apasiona brindarte lo último en tecnología, garantizando productos de calidad y un servicio al cliente excepcional.</p>
         
         <div className="quienes-somos-image">
           <img 
-            src="https://www.apple.com/v/home/c/images/heroes/iphone-14-pro/hero_iphone14pro__f2ffrly7sjeq_large.jpg" 
+            src="https://www.semana.com/resizer/v2/HETAPQM7JVH4ZNBGE2PTEIB6NU.jpg?auth=d95346ac1c56a10262652fc90e56c3d08d19b06260f902d5f5a8a85a51cc4600&smart=true&quality=75&width=1280&height=720" 
             alt="Tecnología móvil" 
           />
         </div>

@@ -1,66 +1,42 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f5f5f7;
-    color: #333;
-  }
-  
-  .quienes-somos-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f8f8f8;
-    padding: 0 2rem;
-  }
-  
-  .quienes-somos-content {
-    width: 100%;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .quienes-somos-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .quienes-somos-content p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    color: #777;
-  }
-  
-  .quienes-somos-image img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-top: 2rem;
-  }
-  
-  @media (max-width: 768px) {
-    .quienes-somos-content h1 {
-      font-size: 2.5rem;
-    }
-  
-    .quienes-somos-content p {
-      font-size: 1rem;
-    }
-  
-    .quienes-somos-image img {
-      max-height: 300px;
-    }
-  }
-  
+.quienes-somos-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  color: #2c3e50;
+}
+
+.quienes-somos-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #0072ff;
+  text-align: center;
+}
+
+.quienes-somos-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+.quienes-somos-image {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.quienes-somos-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.quienes-somos-image img:hover {
+  transform: scale(1.02);
+}

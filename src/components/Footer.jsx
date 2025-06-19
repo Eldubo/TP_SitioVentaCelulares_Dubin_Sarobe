@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__content">
         <div className="footer__logo">
-          <h2>📱 CellStore</h2>
+          <h2>📱 Tecnomorphosis</h2>
           <p>Tu tienda de celulares de confianza</p>
         </div>
         <div className="footer__links">
@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__bottom">
-        <p>&copy; 2025 CellStore. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Tecnomorphosis. Todos los derechos reservados.</p>
       </div>
     </footer>
   );

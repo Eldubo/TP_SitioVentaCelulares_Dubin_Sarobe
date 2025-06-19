@@ -1,108 +1,85 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f5f5f7;
-    color: #333;
-  }
-  
-  .home-container {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .hero {
-    background: url('https://via.placeholder.com/1920x800?text=Celulares') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 2rem;
-  }
-  h1 {
-    color: black;
-  }
-  p{
-    color: black;
-  }
-  .hero-content {
-    max-width: 800px;
-  }
-  
-  .hero h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    opacity: 0.8;
-  }
-  
-  .btn-cta {
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-    background-color: #0071e3;
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: background-color 0.3s ease;
-    border: none;
-  }
-  
-  .btn-cta:hover {
-    background-color: #005bb5;
-  }
-  
-  .home-featured {
-    text-align: center;
-    padding: 3rem 2rem;
-    background-color: #f5f5f7;
-  }
-  
-  .home-featured h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    font-weight: 600;
-  }
-  
-  .brands {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-  }
-  
-  .brand-card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .brand-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .brand-card img {
-    width: 100%;
-    max-width: 150px;
-    margin-bottom: 1rem;
-  }
-  
-  .brand-card p {
-    font-size: 1.2rem;
-    color: #333;
-    font-weight: 500;
-  }
+.home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.hero {
+  background: linear-gradient(to right, #00c6ff, #002761);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: white;
+  color: #0072ff;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #f0f0f0;
+  color: #005bb5;
+}
+
+.home-featured {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.home-featured h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #34495e;
+}
+
+.brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.brand-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.brand-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.brand-card p {
+  padding: 0.75rem;
+  font-weight: bold;
+  color: #273849;
+}

@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import '../styles/home.css'; // Asegúrate de crear este archivo CSS
+import '../styles/home.css';
 
 export default function Home() {
   return (
     <section className="home-container">
       <div className="hero">
         <div className="hero-content">
-          <h1>Bienvenido a CellStore</h1>
+          <h1>Bienvenido a Tecnomorphosis</h1>
           <p>Explorá los mejores celulares del mercado.</p>
           <Link to="/productos" className="btn-cta">Ver Productos</Link>
         </div>

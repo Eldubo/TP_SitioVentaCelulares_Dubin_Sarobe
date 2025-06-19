@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <header className={`navbar ${menuAbierto ? 'active' : ''}`}>
       <div className="navbar__logo">
-        <Link to="/" onClick={cerrarMenu}>📱 CellStore</Link>
+        <Link to="/" onClick={cerrarMenu}>📱 Tecnomorphosis</Link>
       </div>
 
       <nav className="navbar__links">
