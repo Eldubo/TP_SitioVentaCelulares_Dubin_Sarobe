@@ -1,49 +1,34 @@
-import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { marcas } from '../data/data';
 import '../styles/navbar.css';
 
 const Navbar = () => {
-  const [menuAbierto, setMenuAbierto] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuAbierto(!menuAbierto);
-  };
-
-  const cerrarMenu = () => {
-    setMenuAbierto(false);
-  };
-
   return (
-    <header className={`navbar ${menuAbierto ? 'active' : ''}`}>
+    <header className="navbar">
       <div className="navbar__logo">
-        <Link to="/" onClick={cerrarMenu}>📱 Tecnomorphosis</Link>
+        <Link to="/">📱 Tecnomorphosis</Link>
       </div>
 
       <nav className="navbar__links">
-        <NavLink to="/" onClick={cerrarMenu}>Home</NavLink>
-        <NavLink to="/quienes-somos" onClick={cerrarMenu}>Quiénes Somos</NavLink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/quienes-somos">Quiénes Somos</NavLink>
+
         <div className="dropdown">
-          <NavLink to="/productos" onClick={cerrarMenu}>Productos ▾</NavLink>
+          <span className="dropdown-toggle">Productos ▾</span>
           <div className="dropdown-content">
-            <NavLink to="/productos" onClick={cerrarMenu}>Ver Todos</NavLink>
+            <NavLink to="/productos">Ver Todos</NavLink>
             {marcas.map(marca => (
-              <NavLink
-                key={marca.id}
-                to={`/productos/marca/${marca.id}`}
-                onClick={cerrarMenu}
-              >
+              <NavLink key={marca.id} to={`/productos/marca/${marca.id}`}>
                 {marca.nombre}
               </NavLink>
             ))}
           </div>
         </div>
-        <NavLink to="/contacto" onClick={cerrarMenu}>Contacto</NavLink>
+
+        <NavLink to="/contacto">Contacto</NavLink>
       </nav>
 
-      <div className="menu-toggle" onClick={toggleMenu}>
-        ☰
-      </div>
+      <div className="menu-toggle">☰</div>
     </header>
   );
 };

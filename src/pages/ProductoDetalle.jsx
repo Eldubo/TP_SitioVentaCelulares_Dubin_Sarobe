@@ -23,25 +23,28 @@ export default function ProductoDetalle() {
     });
   };
 
-  if (!celular) return <p>Producto no encontrado</p>;
+  if (!celular) return <p className="producto-no-encontrado">Producto no encontrado</p>;
 
   return (
-    <section>
-      <h2>{celular.nombre}</h2>
-      <div>
+    <section className="producto-detalle">
+      <div className="galeria-imagenes">
         {celular.fotos.map((foto, i) => (
           <img
             key={i}
             src={foto}
             alt={`${celular.nombre} ${i + 1}`}
-            width="200"
-            style={{ visibility: imagenesCargadas[i] ? 'visible' : 'hidden' }}
+            className={`imagen-producto ${imagenesCargadas[i] ? 'visible' : 'oculta'}`}
             onLoad={() => manejarCarga(i)}
           />
         ))}
       </div>
-      <p>{celular.descripcion}</p>
-      <p>Precio: ${celular.precio}</p>
+
+      <div className="informacion-producto">
+        <h2 className="nombre-producto">{celular.nombre}</h2>
+        <p className="descripcion-producto">{celular.descripcion}</p>
+        <p className="precio-producto">Precio: <strong>${celular.precio}</strong></p>
+        <button className="boton-comprar">Comprar ahora</button>
+      </div>
     </section>
   );
 }

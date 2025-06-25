@@ -18,7 +18,7 @@ export default function App() {
           <Route path="productos/marca/:idMarca" element={<Productos />} />
           <Route path="productos/detalle/:idCelular" element={<ProductoDetalle />} />
           <Route path="contacto" element={<Contacto />} />
-          <Route path='*' element={<NotFound/>}/>
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
