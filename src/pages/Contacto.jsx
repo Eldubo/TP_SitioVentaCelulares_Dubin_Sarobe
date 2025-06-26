@@ -8,7 +8,7 @@ export default function Contacto() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Mensaje enviado de: ${nombre}`);
+    alert(`Mensaje enviado de: ${nombre} con el mensaje: ${mensaje}`);
   };
 
   return (
