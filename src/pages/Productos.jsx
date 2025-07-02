@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { celulares, marcas } from '../data/data';
-import CardCelular from '../components/Cardcelular.jsx'; 
+import CardCelular from '../components/CardCelular.jsx'; 
 import '../styles/productos.css';
 
 export default function Productos() {

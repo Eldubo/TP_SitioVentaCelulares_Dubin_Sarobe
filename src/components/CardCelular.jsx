@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import '../styles/Cardcelular.css'
+import '../styles/cardcelular.css'
 
 export default function CardCelular({ celular }) {
   return (

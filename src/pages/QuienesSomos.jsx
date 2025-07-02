@@ -1,4 +1,4 @@
-import '../styles/quienesSomos.css';
+import '../styles/QuienesSomos.css';
 
 export default function QuienesSomos() {
   return (
